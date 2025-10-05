@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Debug & Test Files
+debug_plates/
+test*.py
+check*.py
+results.txt
+
+# Output
+output_images/
+output_videos/
+output_images_test/
+
+# Model files (too large for git)
+*.pt
+*.onnx
+models/*.pt
+yolo*.pt
+
+# Tracker files
+tracker_stubs/
+
+# Input data (optional - nếu bạn muốn push ảnh mẫu thì comment dòng này)
+# input_images/
+# input_videos/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
