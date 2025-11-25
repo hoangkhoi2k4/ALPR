@@ -4,6 +4,82 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Dataset - KHÔNG push lên Git (quá nặng!)
+dataset/images/
+dataset/labels/
+dataset/raw_images/
+dataset/raw_labels/
+dataset/annotation_samples/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.tiff
+
+# Chỉ giữ cấu trúc thư mục
+!dataset/images/train/.gitkeep
+!dataset/images/val/.gitkeep
+!dataset/images/test/.gitkeep
+!dataset/labels/train/.gitkeep
+!dataset/labels/val/.gitkeep
+!dataset/labels/test/.gitkeep
+
+# Training results
+runs/
+*.pt  # Model files - dùng Git LFS nếu cần
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Output
+output_images/
+detections/
+debug_plates/
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+.Python
 build/
 develop-eggs/
 dist/

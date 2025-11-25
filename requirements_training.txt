@@ -1,0 +1,27 @@
+# Requirements cho training model với CUDA
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# YOLO
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utils
+pyyaml>=6.0
+tqdm>=4.65.0
+scipy>=1.10.0
+
+# Label Tools (optional - nếu muốn label trên máy)
+# labelImg>=1.8.6
