@@ -1,4 +1,5 @@
-train: dataset/images/train
-val: dataset/images/val
+train: G:/code/ALPR/dataset/images/train
+val:   G:/code/ALPR/dataset/images/val
+test:  G:/code/ALPR/dataset/images/test
 nc: 2
 names: ['BSD', 'BSV']

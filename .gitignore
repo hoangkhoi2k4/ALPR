@@ -13,33 +13,36 @@ ENV/
 .ipynb_checkpoints
 
 # Dataset - KHÔNG push lên Git (quá nặng!)
-dataset/images/
-dataset/labels/
+dataset/images/train/*
+dataset/images/val/*
+dataset/images/test/*
+dataset/labels/train/*
+dataset/labels/val/*
+dataset/labels/test/*
 dataset/raw_images/
 dataset/raw_labels/
 dataset/annotation_samples/
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.gif
-*.tiff
 
-# Chỉ giữ cấu trúc thư mục
-!dataset/images/train/.gitkeep
-!dataset/images/val/.gitkeep
-!dataset/images/test/.gitkeep
-!dataset/labels/train/.gitkeep
-!dataset/labels/val/.gitkeep
-!dataset/labels/test/.gitkeep
+# Giữ lại sample để demo
+!dataset/images/train/sample_*
+!dataset/labels/train/sample_*
 
 # Training results
-runs/
-*.pt  # Model files - dùng Git LFS nếu cần
+runs/detect/
+runs/train/*/weights/last.pt
+runs/train/*/weights/epoch*.pt
+
+# Giữ lại best model và results để demo
+!runs/train/*/weights/best.pt
+!runs/train/*/results.png
+!runs/train/*/confusion_matrix.png
+
+# Model files khác
 *.pth
 *.onnx
 *.engine
 *.tflite
+yolo*.pt
 
 # Logs
 *.log
